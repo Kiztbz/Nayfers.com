@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Labrada:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Phudu:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 :root {
     --font: black;
@@ -213,7 +214,7 @@
 
 .twodiv-title {
     font-size: 30px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Anton', sans-serif;
 }
 
 .sign {
@@ -258,6 +259,10 @@
 
 .name {
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .name img {
@@ -265,7 +270,7 @@
 }
 
 .company {
-    width: 35%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -273,7 +278,7 @@
 }
 
 .quick-links {
-    width: 35%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -282,25 +287,25 @@
 .fhead {
     font-size: 30px;
     margin-bottom: 10px;
+    font-family: 'Anton', sans-serif;
 }
 
 .flink {
     margin: 10px;
+    font-family: 'Oswald', sans-serif;
 }
-
-/*COPY*/
-.copy {
-    display: flex;
-    flex-direction: row;
-}
-
-.copyright {
-    padding-left: 20px;
-}
-
 .pow {
     margin-left: auto;
     padding-right: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+.pow img{
+    width: 100%;
+}
 /*IMAGES*/
