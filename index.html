@@ -16,104 +16,133 @@
 <body>
     <div class="content">
         <!--HEAD-->
-        <div class="head">
-            <div class="logo">
-                <div class="logo-content"><img src="logo_highres.png"></div>
+        <!--SETTINGS-->
+        <div class="settings-panel" id="settings">
+            <span class="material-symbols-outlined close" onclick="closeNav()">
+                close
+            </span>
+            <div class="sp-header">
+                <div>Settings</div>
             </div>
-            <div class="links">
-                <div class="link">Home</div>
-                <div class="link">Blog</div>
-                <div class="link">Notes</div>
-                <div class="link">Syllabus</div>
-            </div>
-            <div class="tools">
-                <div class="tool">
-                    <span class="material-symbols-outlined">
-                        person
-                    </span>
-                </div>
-                <div class="tool">
-                    <span class="material-symbols-outlined">
-                        settings
-                    </span>
-                </div>
-                <div class="tool">
-                    <span class="material-symbols-outlined">
-                        info
-                    </span>
+            <div class="sp-body">
+                <div class="sp-block">
+                    <div class="sp-block-head">Theme</div>
+                    <div class="sp-block-content">
+                        <div class="toggle">
+                            <div class="t">Light</div>
+                            <div>
+                                <span class="material-symbols-outlined t" onclick="themeswitch()" id="toggle">
+                                    toggle_off
+                                </span>
+                            </div>
+                            <div class="t">Dark</div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="scopy">Nayfers inc.<br>Notes At Your Fingertips</div>
         </div>
-
-        <!--BODY-->
-        <div class="body">
-            <div class="intro">
-                <div class="treeup"><img src="treeup.png"></div>
-                <div class="intro-para">
-                    <div class="intro-para-title">Scared of Syllabus?</div>
-                    <div class="intro-desc">Don't know where to start?<br>You're at the right place!</div>
-                </div>
-                <div class="searchbar">
-                    <div class="search"><input type="text" placeholder="Search for notes, docs and topics"></div>
-                    <div class="search-icon">
-                        <span class="material-symbols-outlined">
-                            search
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="info-blocks">
-                <div class="twodiv">
-                    <div class="block2">
-                        <div class="twodiv-title">New here? Come join us!</div>
-                        <div class="sign">Sign up</div>
-                    </div>
-                    <div class="block2">
-                        <div class="twodiv-title">Revisit? Welcome back!</div>
-                        <div class="sign">Sign in</div>
-                    </div>
-                </div>
-                <div class="threediv">
-                    <div class="block3">
-                        <div class="threediv-title">Blog</div>
-                        <div class="threediv-content">Come check our blog</div>
-                    </div>
-                    <div class="block3">
-                        <div class="threediv-title">Notes</div>
-                        <div class="threediv-content">Want some notes?</div>
-                    </div>
-                    <div class="block3">
-                        <div class="threediv-title">Syllabus</div>
-                        <div class="threediv-content">Know what to study</div>
-                    </div>
-                </div>
-            </div>
+    </div>
+    <div class="head">
+        <div class="logo">
+            <div class="logo-content"><img src="logo_highres.png" id="logo"></div>
         </div>
-
-        <!--FOOT-->
-        <div class="foot">
-            <div class="disp">
-                <div class="name"><img src="logobg.png"></div>
-                <div class="company">
-                    <div class="fhead">Company</div>
-                    <div class="flinks">
-                        <div class="flink">About us</div>
-                        <div class="flink">Contact us</div>
-                    </div>
-                </div>
-                <div class="quick-links">
-                    <div class="fhead">Quick Links</div>
-                    <div class="flinks">
-                        <div class="flink">Blog</div>
-                        <div class="flink">Notes</div>
-                        <div class="flink">Syllabus</div>
-                        <div class="flink">Questions</div>
-                    </div>
-                </div>
-                <div class="pow">powered by <img src="vetdevlogo.png"></div>
+        <div class="links">
+            <div class="link">Home</div>
+            <div class="link">Blog</div>
+            <div class="link">Notes</div>
+            <div class="link">Syllabus</div>
+        </div>
+        <div class="tools">
+            <div class="tool">
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+            </div>
+            <div class="tool" onclick="openNav()">
+                <span class="material-symbols-outlined">
+                    settings
+                </span>
+            </div>
+            <div class="tool">
+                <span class="material-symbols-outlined">
+                    info
+                </span>
             </div>
         </div>
     </div>
+
+    <!--BODY-->
+    <div class="body" onclick="closeNav()">
+        <div class="intro">
+            <div class="treeup"><img src="treeup.png"></div>
+            <div class="intro-para">
+                <div class="intro-para-title">Scared of Syllabus?</div>
+                <div class="intro-desc">Don't know where to start?<br>You're at the right place!</div>
+            </div>
+            <div class="searchbar">
+                <div class="search"><input type="text" placeholder="Search for notes, docs and topics"></div>
+                <div class="search-icon">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="info-blocks">
+            <div class="twodiv">
+                <div class="block2">
+                    <div class="twodiv-title">New here? Come join us!</div>
+                    <div class="sign">Sign up</div>
+                </div>
+                <div class="block2">
+                    <div class="twodiv-title">Revisit? Welcome back!</div>
+                    <div class="sign">Sign in</div>
+                </div>
+            </div>
+            <div class="threediv">
+                <div class="block3">
+                    <div class="threediv-title">Blog</div>
+                    <div class="threediv-content">Come check our blog</div>
+                </div>
+                <div class="block3">
+                    <div class="threediv-title">Notes</div>
+                    <div class="threediv-content">Want some notes?</div>
+                </div>
+                <div class="block3">
+                    <div class="threediv-title">Syllabus</div>
+                    <div class="threediv-content">Know what to study</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOT-->
+    <div class="foot">
+        <div class="disp">
+            <div class="name"><img src="logobg.png"></div>
+            <div class="company">
+                <div class="fhead">Company</div>
+                <div class="flinks">
+                    <div class="flink">About us</div>
+                    <div class="flink">Contact us</div>
+                </div>
+            </div>
+            <div class="quick-links">
+                <div class="fhead">Quick Links</div>
+                <div class="flinks">
+                    <div class="flink">Blog</div>
+                    <div class="flink">Notes</div>
+                    <div class="flink">Syllabus</div>
+                    <div class="flink">Questions</div>
+                </div>
+            </div>
+            <div class="pow">powered by <img src="vetdevlogo.png"></div>
+        </div>
+    </div>
+    </div>
+    <!--SCRIPTS-->
+    <script src="settings.js"></script>
 </body>
 
 </html>
