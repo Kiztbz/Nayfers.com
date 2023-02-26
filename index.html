@@ -18,7 +18,7 @@
         <!--HEAD-->
         <!--SETTINGS-->
         <div class="settings-panel" id="settings">
-            <span class="material-symbols-outlined close" onclick="closeNav()">
+            <span class="material-symbols-outlined close" onclick="close()">
                 close
             </span>
             <div class="sp-header">
@@ -42,6 +42,25 @@
             </div>
             <div class="scopy">Nayfers inc.<br>Notes At Your Fingertips</div>
         </div>
+        <!--PROFILE-->
+        <div class="profile-panel" id="profile">
+            <span class="material-symbols-outlined close" onclick="close()">
+                close
+            </span>
+            <div class="pp-header">
+                <div class="pp-header-content">
+                    <div class="account-dp">
+                        <div class="account-dp-image"><img src="logobg.png"></div>
+                    </div>
+                    <div class="account-cred">
+                        <div class="account-name">Pragya P</div>
+                        <div class="account-mail">kizbizz69@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pp-body">switch</div>
+            <div class="pp-footer">Sign out</div>
+        </div>
     </div>
     <div class="head">
         <div class="logo">
@@ -54,12 +73,12 @@
             <div class="link">Syllabus</div>
         </div>
         <div class="tools">
-            <div class="tool">
+            <div class="tool" onclick="openProfile()">
                 <span class="material-symbols-outlined">
                     person
                 </span>
             </div>
-            <div class="tool" onclick="openNav()">
+            <div class="tool" onclick="openSettings()">
                 <span class="material-symbols-outlined">
                     settings
                 </span>
@@ -73,7 +92,7 @@
     </div>
 
     <!--BODY-->
-    <div class="body" onclick="closeNav()">
+    <div class="body" onclick="close()">
         <div class="intro">
             <div class="treeup"><img src="treeup.png"></div>
             <div class="intro-para">

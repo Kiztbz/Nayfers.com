@@ -1,18 +1,32 @@
-function openNav() {
-    document.getElementById("settings").style.width = "40%";
+function close(){
+    closeSettings()
+    closeProfile()
+}
+function openSettings() {
+    document.getElementById("settings").style.width = "30%";
+}
+function openProfile(){
+    document.getElementById("profile").style.width = "30%";
 }
 
-function closeNav() {
-    if(document.getElementById("settings").style.width=="40%")
+function closeSettings() {
+    if(document.getElementById("settings").style.width=="30%")
     {
         document.getElementById("settings").style.width = "0";
     }
 }
+function closeProfile() {
+    if(document.getElementById("profile").style.width=="30%")
+    {
+        document.getElementById("profile").style.width = "0";
+    }
+}
+
 
 document.addEventListener('keydown', function (event) {
     const ENTERKEY = 27;
     if (event.keyCode === ENTERKEY) {
-        closeNav()
+        close()
     }
 });
 
