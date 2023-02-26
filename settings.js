@@ -1,6 +1,7 @@
-function close(){
-    closeSettings()
-    closeProfile()
+
+function closeNav() {
+    closeSettings();
+    closeProfile();
 }
 function openSettings() {
     document.getElementById("settings").style.width = "30%";
@@ -26,7 +27,7 @@ function closeProfile() {
 document.addEventListener('keydown', function (event) {
     const ENTERKEY = 27;
     if (event.keyCode === ENTERKEY) {
-        close()
+        closeNav()
     }
 });
 
