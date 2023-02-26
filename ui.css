@@ -172,7 +172,7 @@ body {
 }
 
 .searchbar {
-    margin-top: 100px;
+    margin-top: 50px;
     width: 70%;
     height: 50px;
     border-radius: 10px;
@@ -203,6 +203,16 @@ body {
     width: 5%;
     display: flex;
     align-items: center;
+}
+.downarrow
+{
+    margin-top: 50px;
+    animation: bounce2 2s ease infinite;
+}
+@keyframes bounce2 {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-10px);}
+	60% {transform: translateY(-5px);}
 }
 
 /*INFO*/
@@ -404,8 +414,8 @@ body {
 /*PROFILE-PANEL*/
 .profile-panel {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 10px;
+    right: 10px;
     display: flex;
     flex-direction: column;
     width: 0%;
