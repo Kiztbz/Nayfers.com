@@ -18,7 +18,7 @@
         <!--HEAD-->
         <!--SETTINGS-->
         <div class="settings-panel" id="settings">
-            <span class="material-symbols-outlined close" onclick="closeNav()">
+            <span class="material-symbols-outlined close cur" onclick="closeNav()">
                 close
             </span>
             <div class="sp-header">
@@ -31,7 +31,7 @@
                         <div class="toggle">
                             <div class="t">Light</div>
                             <div>
-                                <span class="material-symbols-outlined t" onclick="themeswitch()" id="toggle">
+                                <span class="material-symbols-outlined t cur" onclick="themeswitch()" id="toggle">
                                     toggle_off
                                 </span>
                             </div>
@@ -44,7 +44,7 @@
         </div>
         <!--PROFILE-->
         <div class="profile-panel" id="profile">
-            <span class="material-symbols-outlined close" onclick="closeNav()">
+            <span class="material-symbols-outlined close cur" onclick="closeNav()">
                 close
             </span>
             <div class="pp-header">
@@ -58,7 +58,19 @@
                     </div>
                 </div>
             </div>
-            <div class="pp-body">switch</div>
+            <div class="pp-body">
+                <div class="pp-body-content">
+                    <div class="pp-body-head">
+                        <div class="pp-body-dropsign">
+                            <span class="material-symbols-outlined cur" onclick="drop()">
+                                manage_accounts
+                            </span>
+                        </div>
+                        <div class="pp-body-title">Manage accounts</div>
+                    </div>
+                    <div class="pp-body-dropdown" id="dropdown">dropdown</div>
+                </div>
+            </div>
             <div class="pp-footer">Sign out</div>
         </div>
     </div>

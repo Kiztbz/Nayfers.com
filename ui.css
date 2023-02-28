@@ -380,6 +380,9 @@ body {
     right: 10px;
     cursor: grab;
 }
+.cur{
+    cursor: grab;
+}
 
 .sp-block {
     padding: 20px;
@@ -420,7 +423,7 @@ body {
     flex-direction: column;
     width: 0%;
     background-color: var(--panel);
-    border-radius: 10px;
+    border-radius: 10px;    
 }
 
 .pp-header {
@@ -465,4 +468,21 @@ body {
 }
 .account-mail{
     font-size: 15px;
+}
+.pp-body{
+}
+.pp-body-content
+{
+    padding: 30px;
+}
+.pp-body-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.pp-body-title{
+    margin-left: 8px;
+}
+.pp-body-dropdown{
+    height: 0px;
 }

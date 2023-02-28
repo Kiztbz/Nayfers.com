@@ -31,6 +31,18 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
+/*DROPDOWN*/
+function drop(){
+    if(document.getElementById("dropdown").style.height != "auto")
+    {
+        document.getElementById("dropdown").style.height = "auto";
+    }
+    else{
+        document.getElementById("dropdown").style.height = "0";
+    }    
+}
+
+
 
 /*THEME*/
 function themeswitch()
