@@ -2,6 +2,7 @@
 function closeNav() {
     closeSettings();
     closeProfile();
+    drop();
 }
 function openSettings() {
     document.getElementById("settings").style.width = "30%";
