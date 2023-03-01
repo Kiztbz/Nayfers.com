@@ -204,15 +204,29 @@ body {
     display: flex;
     align-items: center;
 }
-.downarrow
-{
+
+.downarrow {
     margin-top: 50px;
     animation: bounce2 2s ease infinite;
 }
+
 @keyframes bounce2 {
-	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-	40% {transform: translateY(-10px);}
-	60% {transform: translateY(-5px);}
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
 }
 
 /*INFO*/
@@ -380,7 +394,8 @@ body {
     right: 10px;
     cursor: grab;
 }
-.cur{
+
+.cur {
     cursor: grab;
 }
 
@@ -423,7 +438,7 @@ body {
     flex-direction: column;
     width: 0%;
     background-color: var(--panel);
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
 .pp-header {
@@ -446,11 +461,13 @@ body {
 .account-dp {
     width: 20%;
 }
-.account-dp-image{
+
+.account-dp-image {
     width: 50px;
     height: 50px;
     border-radius: 100%;
 }
+
 .account-dp img {
     width: 100%;
     display: flex;
@@ -458,31 +475,50 @@ body {
     align-items: center;
     height: 50px;
 }
+
 .account-cred {
     width: 80%;
     font-family: 'Oswald', sans-serif;
     color: var(--font);
 }
-.account-name{
+
+.account-name {
     font-size: 18px;
 }
-.account-mail{
+
+.account-mail {
     font-size: 15px;
 }
-.pp-body{
+
+.pp-body-content {
+    padding-left: 30px;
+    
 }
-.pp-body-content
-{
-    padding: 30px;
-}
-.pp-body-head{
+
+.pp-body-head {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-top: 20px;
 }
-.pp-body-title{
+
+.pp-body-title {
     margin-left: 8px;
 }
-.pp-body-dropdown{
+
+.pp-body-dropdown {
     height: 0px;
+    margin-left:8px;
+}
+
+.pp-footer-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.pp-footer-title{
+    margin-left: 8px;
 }

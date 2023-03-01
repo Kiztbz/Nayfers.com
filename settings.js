@@ -3,6 +3,7 @@ function closeNav() {
     closeSettings();
     closeProfile();
     drop();
+    closeDrop();
 }
 function openSettings() {
     document.getElementById("settings").style.width = "30%";
@@ -42,7 +43,10 @@ function drop(){
         document.getElementById("dropdown").style.height = "0";
     }    
 }
-
+function closeDrop()
+{
+    document.getElementById("dropdown").style.height = "0";
+}
 
 
 /*THEME*/
