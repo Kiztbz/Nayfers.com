@@ -7,21 +7,25 @@ function closeNav() {
 }
 function openSettings() {
     document.getElementById("settings").style.width = "30%";
+    document.getElementById("settings").style.opacity = "100%";
 }
 function openProfile(){
     document.getElementById("profile").style.width = "30%";
+    document.getElementById("profile").style.opacity = "100%";
 }
 
 function closeSettings() {
     if(document.getElementById("settings").style.width=="30%")
     {
         document.getElementById("settings").style.width = "0";
+        document.getElementById("settings").style.opacity = "10%";
     }
 }
 function closeProfile() {
     if(document.getElementById("profile").style.width=="30%")
     {
         document.getElementById("profile").style.width = "0";
+        document.getElementById("profile").style.opacity = "10%";
     }
 }
 

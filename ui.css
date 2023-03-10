@@ -2,13 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Phudu:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 
 :root {
-    --font: #000000;
-    --theme: #C9EFC7;
-    --dtheme: #6ca069;
-    --panel: #557f40e6;
-    --bg: #ffffff;
+    --font: #05386B;
+    --theme: #379683;
+    --dtheme: #8EE4AF;
+    --panel: #EDF5E1;
+    --bg: #fffff;
 }
 
 * {
@@ -58,7 +59,8 @@ body {
 }
 
 .logo-content {
-    width: 95%;
+    font-size: 40px;
+    font-family: 'Phudu', cursive;
 }
 
 .logo-content img {
@@ -119,7 +121,6 @@ body {
 }
 
 .tool {
-    background-color: var(--theme);
     width: 30px;
     height: 30px;
     border-radius: 100%;
@@ -144,14 +145,41 @@ body {
 /*BODY*/
 /*INTRO*/
 .intro {
-    margin-top: 40px;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
+    width: 95%;
     justify-content: center;
     align-items: center;
     font-family: 'Phudu', cursive;
     color: var(--font);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.intro-left {
+    width:25%;
+}
+.intro-center{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.intro-right {
+    width: 25%;
+}
+
+.treeup {
+    display: flex;
+}
+
+.treeup img {
+    width: 100%;
+}
+
+.intro-para {
+    margin-top: 50px;
 }
 
 .intro-para-title {
@@ -163,17 +191,17 @@ body {
 }
 
 .intro-desc {
-    font-size: 30px;
+    font-size: 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    font-family: 'Neucha', cursive;
 }
 
 .searchbar {
     margin-top: 50px;
-    width: 70%;
+    width: 90%;
     height: 50px;
     border-radius: 10px;
     display: flex;
@@ -206,7 +234,7 @@ body {
 }
 
 .downarrow {
-    margin-top: 50px;
+    margin-top: 100px;
     animation: bounce2 2s ease infinite;
 }
 
@@ -237,7 +265,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 200px;
+    margin-bottom: 80px;
     color: #000000;
 }
 
@@ -257,7 +285,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 150px;
-    background-color: var(--dtheme);
+    background-color: var(--theme);
     margin: 10px;
     border-radius: 5px;
 }
@@ -271,7 +299,7 @@ body {
     margin-top: 10px;
     padding: 10px;
     border-radius: 5px;
-    background-color: var(--theme);
+    background-color: var(--dtheme);
 }
 
 /*THREEDIV*/
@@ -290,7 +318,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 150px;
-    background-color: var(--dtheme);
+    background-color: var(--theme);
     margin: 10px;
     border-radius: 5px;
 }
@@ -298,6 +326,16 @@ body {
 .threediv-title {
     font-size: 30px;
     font-family: 'Oswald', sans-serif;
+}
+/*FOOTIMAGE*/
+.footimg{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footimg img{
+    width: 100%;
 }
 
 /*FOOTER*/
@@ -368,6 +406,7 @@ body {
     top: 0px;
     right: 0px;
     height: 100%;
+    opacity: 10%;
     width: 0%;
     transition: 0.4s;
     background-color: var(--panel);
@@ -439,6 +478,7 @@ body {
     width: 0%;
     background-color: var(--panel);
     border-radius: 10px;
+    opacity: 10%;
 }
 
 .pp-header {
@@ -492,7 +532,7 @@ body {
 
 .pp-body-content {
     padding-left: 30px;
-    
+
 }
 
 .pp-body-head {
@@ -508,10 +548,10 @@ body {
 
 .pp-body-dropdown {
     height: 0px;
-    margin-left:8px;
+    margin-left: 8px;
 }
 
-.pp-footer-content{
+.pp-footer-content {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -519,6 +559,7 @@ body {
     padding-bottom: 20px;
     padding-top: 10px;
 }
-.pp-footer-title{
+
+.pp-footer-title {
     margin-left: 8px;
 }
