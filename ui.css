@@ -153,35 +153,84 @@ body {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
-}
+    height: 450px;
 
-.intro-left {
-    width:25%;
 }
-.intro-center{
-    width: 50%;
+.intro-left {
+    width:35%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .intro-right {
-    width: 25%;
-}
-
-.treeup {
+    width: 65%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
-.treeup img {
+.introimg{
+    width: 90%;
+}
+.introimg img{
     width: 100%;
 }
-
-.intro-para {
-    margin-top: 50px;
+/*INTRO_ANIMATION*/
+.introimg{
+    animation: intro_ani 15s ease infinite;
+    margin-right: 800px;
+}
+@keyframes intro_ani {
+    0%{
+        margin-right: 1000px;
+        content: url("1.jpg");
+    }
+    10%{
+        margin-right: 0px;
+        content: url("1.jpg");
+    }
+    20%{
+        margin-right: 0px;
+        content: url("1.jpg");
+    }
+    35%{
+        margin-right: 1000px;
+        content: url("1.jpg");
+    }
+    36%{
+        content: url("2.jpg");
+    }
+    45%{
+        margin-right: 0px;
+        content: url("2.jpg");
+    }
+    50%{
+        margin-right: 0px;
+        content: url("2.jpg");
+    }
+    65%{
+        margin-right: 1000px;
+        content: url("2.jpg");
+    }
+    66%{
+        content: url("3.jpg");
+    }
+    75%{
+        margin-right: 0px;
+        content: url("3.jpg");
+    }
+    80%{
+        margin-right: 0px;
+        content: url("3.jpg");
+    }
+    100%{
+        margin-right: 1000px;
+        content: url("3.jpg");
+    }
 }
 
+/*INTRO_PARA*/
 .intro-para-title {
     font-size: 60px;
     display: flex;
@@ -191,16 +240,16 @@ body {
 }
 
 .intro-desc {
-    font-size: 35px;
+    font-size: 30px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Neucha', cursive;
 }
-
 .searchbar {
-    margin-top: 50px;
+    margin-top: 80px;
     width: 90%;
     height: 50px;
     border-radius: 10px;
@@ -208,11 +257,9 @@ body {
     flex-direction: row;
     background-color: var(--theme);
 }
-
 .search {
     width: 95%;
 }
-
 .search input {
     width: 100%;
     height: 10px;
@@ -222,7 +269,6 @@ body {
     font-size: 20px;
     background-color: var(--theme);
 }
-
 .searchbar input:focus {
     outline: none;
 }
@@ -234,7 +280,7 @@ body {
 }
 
 .downarrow {
-    margin-top: 100px;
+    margin-top: 40px;
     animation: bounce2 2s ease infinite;
 }
 
