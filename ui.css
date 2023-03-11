@@ -186,11 +186,19 @@ body {
         margin-right: 1000px;
         content: url("1.jpg");
     }
+    5%{
+        margin-right: 0px;
+        content: url("1.jpg");
+    }
     10%{
         margin-right: 0px;
         content: url("1.jpg");
     }
     20%{
+        margin-right: 0px;
+        content: url("1.jpg");
+    }
+    30%{
         margin-right: 0px;
         content: url("1.jpg");
     }
@@ -201,11 +209,15 @@ body {
     36%{
         content: url("2.jpg");
     }
-    45%{
+    40%{
         margin-right: 0px;
         content: url("2.jpg");
     }
     50%{
+        margin-right: 0px;
+        content: url("2.jpg");
+    }
+    60%{
         margin-right: 0px;
         content: url("2.jpg");
     }
@@ -216,11 +228,19 @@ body {
     66%{
         content: url("3.jpg");
     }
-    75%{
+    70%{
         margin-right: 0px;
         content: url("3.jpg");
     }
     80%{
+        margin-right: 0px;
+        content: url("3.jpg");
+    }
+    90%{
+        margin-right: 0px;
+        content: url("3.jpg");
+    }
+    95%{
         margin-right: 0px;
         content: url("3.jpg");
     }
