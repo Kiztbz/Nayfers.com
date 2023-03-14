@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
     --font: #05386B;
@@ -41,11 +42,11 @@ body {
 }
 
 .foot {
-    width: 100%;
-    height: auto;
     display: flex;
-    flex-direction: column;
-    background-color: var(--theme);
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 
@@ -80,33 +81,21 @@ body {
 .link {
     margin: 20px;
     border-bottom: 2px solid var(--bg);
-    animation-name: out;
-    animation-duration: 0.6s;
 }
 
 .link:hover {
-    animation-name: in;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes out {
-    from {
-        border-bottom: 2px solid var(--theme);
-    }
-
-    to {
-        border-bottom: 2px solid var(--bg);
-    }
+    animation: in 3s ease infinite;
 }
 
 @keyframes in {
-    from {
-        border-bottom: 2px solid var(--bg);
+    1% {
+        border-bottom:2px solid var(--theme);
     }
-
-    to {
-        border-bottom: 2px solid var(--theme);
+    90% {
+        border-bottom:2px solid var(--theme);
+    }
+    to{
+        border-bottom:2px solid var(--theme);
     }
 }
 
@@ -275,7 +264,7 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: row;
-    background-color: var(--theme);
+    border: 2px solid var(--theme);
 }
 .search {
     width: 95%;
@@ -287,7 +276,6 @@ body {
     border: none;
     padding: 20px;
     font-size: 20px;
-    background-color: var(--theme);
 }
 .searchbar input:focus {
     outline: none;
@@ -398,7 +386,7 @@ body {
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
+  
 }
 .footimg img{
     width: 100%;
@@ -406,63 +394,100 @@ body {
 
 /*FOOTER*/
 /*DISPLAY*/
-.disp {
-    display: flex;
-    flex-direction: row;
-}
-
-.name {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.name img {
-    width: 100%;
-}
-
-.company {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.quick-links {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.fhead {
-    font-size: 30px;
-    margin-bottom: 10px;
-    font-family: 'Anton', sans-serif;
-}
-
-.flink {
-    margin: 10px;
-    font-family: 'Oswald', sans-serif;
-}
-
-.pow {
+.aboutus
+{
+    font-family: 'poppins',sans-serif;
     margin-left: auto;
-    padding-right: 20px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 15px;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 10px;
+    margin-bottom: auto;
 }
+.logofoot
+{
+  font-family: 'Phudu', cursive;
+  font-size: 20px;
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hr1
+{
+    width: 18%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
-.pow img {
-    width: 100%;
+}.hr2
+{
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}.hr3
+{
+    width: 36%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.aboutus p
+{
+    font-size: 15px;
+    
+}
+.quicklinks
+{
+    font-family:'poppins',sans-serif; 
+    margin-left: 90px;
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+.contactus
+{
+    font-family: 'poppins',sans-serif;
+    margin-left: 90px;
+    margin-top: 10px;
+    margin-bottom: auto;
+    margin-right: 15px;
+}
+.mail
+{
+    block-size: 20px;
+    margin-right: 10px;
+}
+.email
+{
+    display: flex;
+    align-items: center;
+    margin-left: 2px;
+    margin-top: 10px;
+}
+.home
+{
+    block-size: 23px;
+    margin-right: 8px;
+    margin-left: -1px;
+}
+h4
+{
+    color: #088178;
+}
+.footerbodyy
+{
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+    margin-top: 30%;
+    margin-bottom: 20px;
+}
+.li
+{
+    margin-top: 10px;
+
+}
+a
+{
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -629,3 +654,19 @@ body {
 .pp-footer-title {
     margin-left: 8px;
 }
+
+
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear alternate infinite;
+  }
+
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 922;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
