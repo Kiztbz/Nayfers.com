@@ -16,12 +16,13 @@
 * {
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
     transition: 0.7s;
+    
 }
 
 body {
     background-color: var(--bg);
+    overflow-x: hidden;
 
 
 }
@@ -363,7 +364,8 @@ body {
     display: flex;
     justify-content: center;
     block-size: 400px;
-    margin-top: 40px;
+    margin-top: -25%;
+    
 
 }
 
@@ -500,12 +502,14 @@ a {
 .settings-panel {
     position: fixed;
     top: 0px;
-    right: 0px;
+    right: -40px;
     height: 100%;
     opacity: 10%;
     width: 0%;
+    margin-left: 120%;
     transition: 0.4s;
     background-color: var(--panel);
+    
 }
 
 .sp-header {
@@ -568,10 +572,11 @@ a {
 .profile-panel {
     position: absolute;
     top: 10px;
-    right: 10px;
+   right: -40px;
     display: flex;
     flex-direction: column;
     width: 0%;
+    margin-left: 100%;
     background-color: var(--panel);
     border-radius: 10px;
     opacity: 10%;
@@ -693,6 +698,7 @@ a {
     border-radius: 10px;
     transition: 300ms ease-in-out;
     margin:20px;
+    
 }
 
 .cardd1:hover {
@@ -706,6 +712,7 @@ a {
     border-radius: 10px;
     transform: translateY(-50px);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    
 }
 
 .cardhead{
@@ -714,16 +721,14 @@ a {
 
 .cardhead h1 {
     font-size: 25px;
-    margin-top: -20px;
+    margin-top: -10px;
     color: #379683;
     margin-bottom: 10px;
 }
 
 .footbtnns {
-    padding: 10px 25px 10px 25px;
+   
     background-color: #379683;
-    ;
-    width: fit-content;
     color: #f4f4f4;
     font-weight: bold;
     margin-top: 10px;
@@ -735,7 +740,11 @@ a {
     opacity: 0;
     transition: 0.3s;
     overflow: hidden;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}  
 
 .cardd1:hover>.contentt {
     opacity: 1;
@@ -752,8 +761,16 @@ a {
     padding-right: 100px;
     padding-left: 100px;
     box-sizing: border-box;
+    margin-bottom: 0px;
 }
 
 .waves {
     transform: translateY(-250px);
+   
+}
+.infobtns
+{
+ padding-top: 10px;
+ padding-left: 20px;
+ padding-right: 20px;
 }
