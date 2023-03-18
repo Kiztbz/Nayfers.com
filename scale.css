@@ -1,0 +1,54 @@
+.mob{
+    display: none;
+}
+@media screen and (max-width: 450px){
+    .mob{
+        display: initial;
+    }
+    .des{
+        display: none;
+    }
+    /*HEADER*/
+    .logo{
+        width: 80%;
+    }
+    .mob_menu{
+        width: 20%;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*BODY*/
+    .intro{
+        flex-direction: column;
+    }
+    .intro-left{
+        width: 80%;
+        height: 400px;
+        margin-top: 0px;
+    }
+    .intro-right{
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+    .intro-para-title{
+        font-size: 30px;
+    }
+    .intro-desc{
+        font-size: 22px;
+    }
+    .searchbar{
+        margin-top:20px;
+        width: 100%;
+    }
+    .search input{
+        width: 90%;
+        font-size: 18px;
+    }
+    .search-icon{
+        width: 10%;
+    }
+}
