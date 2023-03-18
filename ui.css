@@ -694,7 +694,7 @@ a {
 .cardd1 {
     font-family: 'poppins', sans-serif;
     width: 25%;
-    height: 280px;
+    height: 230px;
     background-color: #f4f4f4;
     box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.46);
     -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.46);
@@ -709,13 +709,13 @@ a {
 }
 
 .cardd1:hover {
-    height: 370px;
+    height: 320px;
     transform: translateY(-60px);
 
 }
 
 .cardimg {
-    block-size: 200px;
+    block-size: 140px;
     border-radius: 10px;
     transform: translateY(-50px);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
