@@ -46,14 +46,18 @@ function drop(){
     if(document.getElementById("dropdown").style.height != "auto")
     {
         document.getElementById("dropdown").style.height = "auto";
+        document.getElementById("dropdown").style.display = "flex";
     }
     else{
         document.getElementById("dropdown").style.height = "0";
+        document.getElementById("dropdown").style.display = "none";
+
     }    
 }
 function closeDrop()
 {
     document.getElementById("dropdown").style.height = "0";
+    document.getElementById("dropdown").style.display = "none";
 }
 
 
