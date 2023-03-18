@@ -9,6 +9,9 @@
         display: none;
     }
     /*HEADER*/
+    .head{
+        height: 80px;
+    }
     .logo{
         width: 80%;
     }
@@ -26,27 +29,30 @@
     /*BODY*/
     .intro{
         flex-direction: column;
+        position: absolute;
+        top: 20px;
+        height: 100%;
     }
     .intro-left{
         width: 80%;
-        height: 400px;
-        margin-top: 0px;
+        position: absolute;
+        top: 0px;
     }
     .intro-right{
         width: 90%;
-        height: auto;
         flex-direction: column;
+        position: absolute;
+        top: 280px;
     }
     .intro-para-title{
         font-size: 30px;
     }
     .intro-desc{
-        font-size: 22px;
+        font-size: 25px;
     }
     .searchbar{
-        margin-top:20px;
+        margin-top:50px;
         width: 100%;
-        margin-bottom: 40px;
     }
     .search input{
         width: 90%;
