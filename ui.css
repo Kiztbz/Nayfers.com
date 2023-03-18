@@ -357,7 +357,6 @@ body {
 .info-blocks {
     width: 100%;
     margin-top: 150px;
-    margin-bottom: 170px;
 }
 
 /*FOOTIMAGE*/
@@ -367,6 +366,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 0px;  
+    width: 80%;
 }
 .footimgg {
     width: 50%;
@@ -378,7 +378,7 @@ body {
 .footerr1 {
     font-family: 'poppins', sans-serif;
     margin-left: auto;
-    width: 40%;
+    width: 35%;
 }
 
 .footerr1 h1,
@@ -388,11 +388,11 @@ p {
 }
 
 .footerr1 h1 {
-    font-size: 45px;
+    font-size: 42px;
 }
 
 .footertext {
-    font-size: 18px
+    font-size: 16px
 }
 
 .footbtn {
