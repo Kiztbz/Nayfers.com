@@ -36,13 +36,13 @@
     .intro-left{
         width: 80%;
         position: absolute;
-        top: 0px;
+        top: 50px;
     }
     .intro-right{
         width: 90%;
         flex-direction: column;
         position: absolute;
-        top: 280px;
+        bottom: 22%;
     }
     .intro-para-title{
         font-size: 30px;
