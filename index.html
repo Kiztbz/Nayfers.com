@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" href="fav.png">
     <link rel="stylesheet" href="ui.css">
-    <link rel="stylesheet" href="scale.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Nayfers</title>
@@ -103,17 +102,17 @@
 
     <!--ACTUAL WEBSITE-->
     <!--HEADER-->
-    <div class="head">
+    <div class="head"  data-aos="slide-down" data-aos-duration="2000" data-aos-once="true">
         <div class="logo">
             <div class="logo-content">Nayfers.in</div>
         </div>
-        <div class="links des">
+        <div class="links">
             <div class="link">Home</div>
             <div class="link">Blog</div>
             <div class="link">Notes</div>
             <div class="link">Syllabus</div>
         </div>
-        <div class="tools des">
+        <div class="tools">
             <div class="tool" onclick="openProfile()">
                 <span class="material-symbols-outlined">
                     person
@@ -130,17 +129,11 @@
                 </span>
             </div>
         </div>
-        <!--Mobile_Menu-->
-        <div class="mob_menu mob">
-            <span class="material-symbols-outlined">
-                menu
-                </span>
-        </div>
     </div>
     <!--BODY-->
     <div class="body" onclick="close()">
         <!--INTRO-->
-        <div class="intro">
+        <div class="intro" data-aos="slide-up" data-aos-duration="2000" data-aos-once="true">
             <!--LEFT_ANIMATION-->
             <div class="intro-left">
                 <div class="introimg">
@@ -172,15 +165,15 @@
             </span>
         </div>
         <!--INFO-->
-        <div class="info-blocks">
-            <div class="waves">
+        <div class="info-blocks" >
+            <div class="waves" >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                     <path fill="#379683" fill-opacity="1"
                         d="M0,96L80,80C160,64,320,32,480,53.3C640,75,800,149,960,170.7C1120,192,1280,160,1360,144L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
                     </path>
                 </svg>
             </div>
-            <div class="footcardss">
+            <div class="footcardss" >
                 <div class="cardd1">
                     <img class="cardimg" src="man-work.jpg">
                     <div class="cardhead">
@@ -232,29 +225,28 @@
                 </svg>
             </div>
         </div>
-        <!--PRE_FOOT-->
         <div class="footimg">
             <div class="footimgg"><img src="29808798_7618695.jpg"></div>
             <div class="footerr1">
                 <h1>New to nayfers?</h1>
-                <p class="footertext">Join us today and Get started on your journey to excellence!! </p>
+                <p class="footertext">Join us today and Get started<br>on your journey to excellence!! </p>
                 <p class="footbtn">Sign up</p>
             </div>
         </div>
     </div>
-
+    
     <!--FOOTER-->
-    <div class="foot">
+    <div class="foot"   >
         <div class="logofoot">
             <h1>Nayfers.in</h1>
         </div>
-        <div class="aboutus fnav">
+        <div class="aboutus">
             <h4>ABOUT US</h4>
             <hr class="hr1">
             <p>We at Nayfers aim to provide quality<br>study material for students to help<br> them conquer the
                 impossible<br>through our unmatched resources.</p>
         </div>
-        <div class="quicklinks fnav">
+        <div class="quicklinks">
             <h4>QUICK LINKS</h4>
             <hr class="hr2">
             <p><a href=#>Blog</a></p>
@@ -262,7 +254,7 @@
             <p class="li"><a href=#>Syllabus</a></p>
             <p class="li"><a href=#>Questions</a></p>
         </div>
-        <div class="contactus fnav">
+        <div class="contactus">
             <h4>CONTACT US</h4>
             <hr class="hr3">
             <div class="email">
@@ -279,9 +271,13 @@
             </div>
         </div>
     </div>
-    </div>
+    
     <!--SCRIPTS-->
     <script src="settings.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+</script>
 </body>
 
 </html>
