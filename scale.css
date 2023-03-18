@@ -12,6 +12,9 @@
     .logo{
         width: 80%;
     }
+    .logo-content{
+        font-size: 45px;
+    }
     .mob_menu{
         width: 20%;
         margin-left: auto;
@@ -43,6 +46,7 @@
     .searchbar{
         margin-top:20px;
         width: 100%;
+        margin-bottom: 40px;
     }
     .search input{
         width: 90%;
@@ -50,5 +54,60 @@
     }
     .search-icon{
         width: 10%;
+    }
+    .downarrow{
+        position: absolute;
+        bottom: 40px;
+    }
+    /*INFO CARDS*/
+    .info-blocks{
+        position: absolute;
+        bottom: -1305px;
+    }
+    .footcardss{
+        flex-direction: column;
+        height: 1200px;
+    }
+    .cardd1{
+        margin-top: 80px;
+        width: 70%;
+        height: 150;
+    }
+    /*FOOTIMG*/
+    .footimg{
+        position: absolute;
+        bottom: -1900px;
+        flex-direction: column;
+    }
+    .footimgg{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .footerr1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    /*FOOTER*/
+    .foot{
+        position: absolute;
+        bottom: -2850px;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .logofoot{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+    .fnav{
+        margin-left: 60px;
+        margin-bottom: 40px;
     }
 }
