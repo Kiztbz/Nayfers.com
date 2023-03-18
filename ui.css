@@ -693,7 +693,7 @@ a {
 /*NEW INFO CARDS*/
 .cardd1 {
     font-family: 'poppins', sans-serif;
-    width: 30%;
+    width: 25%;
     height: 280px;
     background-color: #f4f4f4;
     box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.46);
@@ -728,7 +728,7 @@ a {
 
 .cardhead h1 {
     font-size: 25px;
-    margin-top: -8px;
+
     padding-bottom: 10px;
     color: #379683;
     margin-bottom: 10px;
@@ -762,12 +762,12 @@ a {
     justify-content: center;
     align-items: center;
     background-color: #379683;
-    height: 400px;
+    height: 300px;
     width: 100%;
 }
 
 .waves {
-    /*transform: translateY(-270px);*/
+    margin: -10px;
 }
 
 .infobtns
