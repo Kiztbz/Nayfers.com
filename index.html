@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" href="fav.png">
     <link rel="stylesheet" href="ui.css">
-    <link rel="stylesheet" href="scale.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -107,17 +106,15 @@
         <div class="logo">
             <div class="logo-content">Nayfers.in</div>
         </div>
-        <div class="links des">
-            <div class="link">Home</div>
+        <div class="links">
+           <div class="link">Home</div>
             <div class="link">Blog</div>
             <div class="link">Notes</div>
             <div class="link">Syllabus</div>
         </div>
-        <div class="tools des">
+        <div class="tools">
             <div class="tool" onclick="openProfile()">
-                <span class="material-symbols-outlined">
-                    person
-                </span>
+                <img class="account" src="manage_accounts_FILL1_wght300_GRAD200_opsz48.png">
             </div>
             <div class="tool" onclick="openSettings()">
                 <span class="material-symbols-outlined">
@@ -126,15 +123,9 @@
             </div>
             <div class="tool">
                 <span class="material-symbols-outlined">
-                    info
+                    tips_and_updates
                 </span>
             </div>
-        </div>
-        <!--Mobile_Menu-->
-        <div class="mob_menu mob">
-            <span class="material-symbols-outlined">
-                menu
-                </span>
         </div>
     </div>
     <!--BODY-->
@@ -166,7 +157,7 @@
             </div>
         </div>
         <!--DOWN_ARROW-->
-        <div class="downarrow">
+        <div class="downarrow" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">
             <span class="material-symbols-outlined">
                 expand_more
             </span>
@@ -180,7 +171,7 @@
                     </path>
                 </svg>
             </div>
-            <div class="footcardss" >
+            <div class="footcardss">
                 <div class="cardd1">
                     <img class="cardimg" src="man-work.jpg">
                     <div class="cardhead">
@@ -247,13 +238,13 @@
         <div class="logofoot">
             <h1>Nayfers.in</h1>
         </div>
-        <div class="aboutus fnav">
+        <div class="aboutus">
             <h4>ABOUT US</h4>
             <hr class="hr1">
             <p>We at Nayfers aim to provide quality<br>study material for students to help<br> them conquer the
                 impossible<br>through our unmatched resources.</p>
         </div>
-        <div class="quicklinks fnav">
+        <div class="quicklinks">
             <h4>QUICK LINKS</h4>
             <hr class="hr2">
             <p><a href=#>Blog</a></p>
@@ -261,7 +252,7 @@
             <p class="li"><a href=#>Syllabus</a></p>
             <p class="li"><a href=#>Questions</a></p>
         </div>
-        <div class="contactus fnav">
+        <div class="contactus">
             <h4>CONTACT US</h4>
             <hr class="hr3">
             <div class="email">
