@@ -161,6 +161,7 @@ body {
     flex-direction: row;
     height: 450px;
     overflow: hidden;
+    
 
 }
 
@@ -788,12 +789,13 @@ a {
     background-color: #379683;
     height: 600px;
     width: 100%;
+    background-image: url(bg.png);
+    background-size: cover;
+    background-size: 60%;
     
 }
 
-.waves {
-    margin: -10px;
-}
+
 
 .infobtns
 {
@@ -801,4 +803,12 @@ a {
  padding-left: 20px;
  padding-right: 20px;
 
+}
+.shortcut
+{   font-family:  'Phudu', cursive; ;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 50px;
+    margin-left: -3%;
+    margin-right: 5%;
 }
