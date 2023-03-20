@@ -35,6 +35,9 @@ body {
     flex-direction: row;
     height: 80px;
     color: var(--font);
+    box-shadow: -1px 10px 14px -3px rgba(0,0,0,0.28);
+    -webkit-box-shadow: -1px 10px 14px -3px rgba(0,0,0,0.28);
+    -moz-box-shadow: -1px 10px 14px -3px rgba(0,0,0,0.28);
 }
 
 .body {
@@ -79,36 +82,33 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 17px;
     font-family: 'poppins', sans-serif;
-    color: black;
+    color: #f4f4f4;;
     font-weight: bold;
 }
 
 .link {
     margin: 20px;
     position: relative;
+    color: black;
     padding: 5px 5px;
-    cursor: pointer;
+    border-radius: 30px;
+   
 
 }
 
-.link::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 0.200rem;
-    background-color: var(--theme);
-    left: 0;
-    bottom: 0px;
-    transform: scale(0, 1);
-    transition: 300ms ease;
-}
 
-.link:hover:after {
-    transform: scale(1, 1);
+.link:hover
+{      
+     color: #f4f4f4;
+     cursor: pointer;
+     background-color: #379683;
+     border-radius: 30px;
+     padding: 5px 20px;
+}    
 
-}
+
 
 
 
@@ -134,12 +134,16 @@ body {
 }
 
 .material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48;
+   font-variation-settings:
+      'FILL' 1,
+      'wght' 300,
+      'GRAD' 200,
+      'opsz' 48;
     overflow: hidden;
+}
+.account
+{
+    block-size: 31px;
 }
 
 
@@ -796,4 +800,5 @@ a {
  padding-top: 10px;
  padding-left: 20px;
  padding-right: 20px;
+
 }
