@@ -518,12 +518,14 @@ h4 {
     color: #088178;
 }
 
-.footerbodyy {
+.foot {
+   
     display: flex;
     margin-left: 50px;
     align-items: center;
-    margin-top: 30%;
-    margin-bottom: 100px;
+    margin-top: 5%;
+   
+  
 }
 
 .li {
@@ -812,7 +814,7 @@ a {
 {   font-family:  'Phudu', cursive; ;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    font-size: 50px;
+    font-size: 45px;
     margin-left: -3%;
     margin-right: 5%;
 }
