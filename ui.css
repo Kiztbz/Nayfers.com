@@ -131,6 +131,11 @@ body {
     align-items: center;
     justify-content: center;
     cursor: grab;
+
+}
+.tool:hover
+{
+    transform: translateY(-8px);
 }
 
 .material-symbols-outlined {
@@ -161,6 +166,7 @@ body {
     flex-direction: row;
     height: 450px;
     overflow: hidden;
+    
     
 
 }
@@ -288,6 +294,7 @@ body {
     justify-content: center;
     align-items: center;
     color:  #379683;
+   
    
 
 }
@@ -421,17 +428,14 @@ p {
     border-radius: 5px;
     margin-top: 30px;
     cursor: pointer;
-    
-   
-    
+    box-shadow: 1px 7px 19px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 7px 19px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 7px 19px -4px rgba(0,0,0,0.75);
 }
 .footbtn:hover
 {
 transition: 300ms ease;
-box-shadow: 2px 4px 16px 2px rgba(0,0,0,0.54);
--webkit-box-shadow: 2px 4px 16px 2px rgba(0,0,0,0.54);
--moz-box-shadow: 2px 4px 16px 2px rgba(0,0,0,0.54);
-
+transform: translateY(-8px);
 }
 
 /*FOOTER*/
@@ -741,6 +745,7 @@ a {
 
 .cardd1:hover {
     height: 320px;
+   
     transform: translateY(-60px);
 
 }
@@ -769,6 +774,7 @@ a {
     background-color: #379683;
     color: #f4f4f4;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .contentt {
@@ -785,6 +791,7 @@ a {
 
 .cardd1:hover>.contentt {
     opacity: 1;
+   
 
 }
 
