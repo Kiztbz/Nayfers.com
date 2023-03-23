@@ -6,29 +6,25 @@ function closeNav() {
     closeDrop();
 }
 function openSettings() {
-    document.getElementById("settings").style.width = "30%";
-    document.getElementById("settings").style.right = "0px";
+    document.getElementById("settings").style.right = "0%";
     document.getElementById("settings").style.opacity = "100%";
 }
 function openProfile(){
-    document.getElementById("profile").style.width = "30%";
-    document.getElementById("profile").style.right = "0px";
+    document.getElementById("profile").style.right = "1%";
     document.getElementById("profile").style.opacity = "100%";
 }
 
 function closeSettings() {
-    if(document.getElementById("settings").style.width=="30%")
+    if(document.getElementById("settings").style.right=="0%")
     {
-        document.getElementById("settings").style.width = "0";
         document.getElementById("settings").style.opacity = "10%";
-        document.getElementById("settings").style.right = "-40px";
+        document.getElementById("settings").style.right = "-40%";
     }
 }
 function closeProfile() {
-    if(document.getElementById("profile").style.width=="30%")
+    if(document.getElementById("profile").style.right=="1%")
     {
-        document.getElementById("profile").style.width = "0";
-        document.getElementById("profile").style.right = "-40px";
+        document.getElementById("profile").style.right = "-40%";
         document.getElementById("profile").style.opacity = "10%";
     }
 }

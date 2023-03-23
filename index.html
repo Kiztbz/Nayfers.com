@@ -7,171 +7,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" href="fav.png">
     <link rel="stylesheet" href="ui.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="prop.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Nayfers</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+    <title>Nayfers.in</title>
 </head>
 
 <body>
     <!--SIDEBARS-->
     <div class="sidebars">
+
         <!--SETTINGS PANEL-->
-        <div class="settings-panel" id="settings">
-            <!--CLOSE BUTTON-->
-            <span class="material-symbols-outlined close cur" onclick="closeNav()">
-                close
-            </span>
-            <!--SETTINGS HEADER-->
-            <div class="sp-header">
-                <div>Settings</div>
-            </div>
-            <!--SETTINGS BODY-->
+        <div class="settings-panel panel" id="settings">
+            <span class="material-symbols-outlined close grab" onclick="closeNav()">close</span>
+            <div class="sp-header"><div>Settings</div></div>
             <div class="sp-body">
-                <!--SETTING-1 THEME-->
                 <div class="sp-block">
                     <div class="sp-block-head">Theme</div>
                     <div class="sp-block-content">
-                        <!--TOGGLE BUTTON-->
                         <div class="toggle">
                             <div class="t">Light</div>
-                            <div>
-                                <span class="material-symbols-outlined t cur" onclick="themeswitch()" id="toggle">
-                                    toggle_off
-                                </span>
-                            </div>
+                            <div><span class="material-symbols-outlined grab" onclick="themeswitch()" id="toggle">toggle_off</span></div>
+                            <div class="t">Dark</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sp-block">
+                    <div class="sp-block-head">Theme</div>
+                    <div class="sp-block-content">
+                        <div class="toggle">
+                            <div class="t">Light</div>
+                            <div><span class="material-symbols-outlined" onclick="themeswitch()" id="toggle">toggle_off</span></div>
                             <div class="t">Dark</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--SETTINGS FOOTER-->
             <div class="scopy">Nayfers inc.<br>Notes At Your Fingertips</div>
         </div>
-        <!--END OF SETTINGS-->
+
         <!--PROFILE PANEL-->
-        <div class="profile-panel" id="profile">
-            <!--CLOSE BUTTON-->
-            <span class="material-symbols-outlined close cur" onclick="closeNav()">
-                close
-            </span>
-            <!--PANEL HEADER-->
+        <div class="profile-panel panel" id="profile">
+            <span class="material-symbols-outlined close grab" onclick="closeNav()">close</span>
             <div class="pp-header">
                 <div class="pp-header-content">
-                    <!--DP-->
-                    <div class="account-dp">
-                        <div class="account-dp-image"><img src="logobg.png"></div>
-                    </div>
-                    <!--DETAILS-->
-                    <div class="account-cred">
-                        <div class="account-name">John Doe</div>
-                        <div class="account-mail">JohnDoe@nayfers.in</div>
+                    <div class="account-dp"><div class="account-dp-image dp"><img src="2-removebg-preview.png"></div></div>
+                    <div class="account-cred center">
+                        <div>John Doe</div>
+                        <div>JohnDoe@nayfers.in</div>
                     </div>
                 </div>
             </div>
-            <!--PANEL BODY-->
-            <div class="pp-body">
+            <div class="pp-body center">
                 <div class="pp-body-content">
                     <div class="pp-body-head">
-                        <!--ACCOUNT MANGEMENT-->
-                        <div class="pp-body-dropsign">
-                            <span class="material-symbols-outlined cur" onclick="drop()">
-                                manage_accounts
-                            </span>
-                        </div>
+                        <div class="pp-body-dropsign"><span class="material-symbols-outlined cur" onclick="drop()">manage_accounts</span></div>
                         <div class="pp-body-title">Manage accounts</div>
                     </div>
-                    <div class="pp-body-dropdown" id="dropdown">dropdown</div>
+                    <div class="pp-body-dropdown vanish" id="dropdown">dropdown</div>
                 </div>
             </div>
-            <!--PANEL FOOTER-->
-            <div class="pp-footer">
+            <div class="pp-footer center">
                 <div class="pp-footer-content">
-                    <!--ICON-->
-                    <div class="pp-footer-icon">
-                        <span class="material-symbols-outlined">
-                            logout
-                        </span>
-                    </div>
-                    <!--TEXt-->
+                    <div class="pp-footer-icon"><span class="material-symbols-outlined">logout</span></div>
                     <div class="pp-footer-title">Logout</div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--ACTUAL WEBSITE-->
-    <!--HEADER-->
-    <div class="head"  data-aos="slide-down" data-aos-duration="2000" data-aos-once="true">
-        <div class="logo">
-            <div class="logo-content">Nayfers.in</div>
-        </div>
-        <div class="links">
-           <div class="link">Home</div>
-            <div class="link">Blog</div>
-            <div class="link">Notes</div>
-            <div class="link">Syllabus</div>
-        </div>
-        <div class="tools">
-            <div class="tool" onclick="openProfile()">
-                <img class="account" src="manage_accounts_FILL1_wght300_GRAD200_opsz48.png">
+    <!--WEBSITE-->
+    <!--SECTION-1-->
+    <div class="sec1">
+         <!--HEADER-->
+         <div class="head center">
+            <div class="logo center"><div class="logo-content">Nayfers.in</div></div>
+            <div class="links center">
+                <div class="link">Home</div>
+                <div class="link">Blog</div>
+                <div class="link">Notes</div>
+                <div class="link">Syllabus</div>
             </div>
-            <div class="tool" onclick="openSettings()">
-                <span class="material-symbols-outlined">
-                    settings
-                </span>
-            </div>
-            <div class="tool">
-                <span class="material-symbols-outlined">
-                    tips_and_updates
-                </span>
+            <div class="tools center">
+                <div class="tool grab" onclick="openProfile()"><span class="material-symbols-outlined">manage_accounts</span></div>
+                <div class="tool grab" onclick="openSettings()"><span class="material-symbols-outlined">settings</span></div>
+                <div class="tool grab"><span class="material-symbols-outlined">tips_and_updates</span></div>
             </div>
         </div>
-    </div>
-    <!--BODY-->
-    <div class="body" onclick="close()">
         <!--INTRO-->
-        <div class="intro" data-aos="slide-up" data-aos-duration="2000" data-aos-once="true">
-            <!--LEFT_ANIMATION-->
-            <div class="intro-left">
-                <div class="introimg">
-                    <img>
-                </div>
-            </div>
-            <!--RIGHT_PARA-->
-            <div class="intro-right">
-                <!--PARA-->
-                <div class="intro-para">
-                    <div class="intro-para-title">Scared of Syllabus?</div>
-                    <div class="intro-desc">Don't know where to start?<br>You're at the right place!</div>
-                </div>
-                <!--SEARCHBAR-->
-                <div class="searchbar">
-                    <div class="search"><input type="text" placeholder="Search for notes, docs and topics"></div>
-                    <div class="search-icon">
-                        <span class="material-symbols-outlined">
-                            search
-                        </span>
+        <div class="intro center">
+            <div class="intro-content">
+                <div class="intro-left center"><div class="introimg"><img></div></div>
+                <div class="intro-right center">
+                    <div class="intro-para">
+                        <div class="intro-para-title center">Scared of Syllabus?</div>
+                        <div class="intro-desc center">Don't know where to start?<br>You're at the right place!</div>
+                    </div>
+                    <!--SEARCHBAR-->
+                    <div class="searchbar">
+                        <div class="search"><input type="text" placeholder="Search for notes, docs and topics"></div>
+                        <div class="search-icon center"><span class="material-symbols-outlined">search</span></div>
                     </div>
                 </div>
             </div>
+            <!--DOWN_ARROW-->
+            <div class="downarrow"><span class="material-symbols-outlined">expand_more</span></div>
         </div>
-        <!--DOWN_ARROW-->
-        <div class="downarrow" data-aos="fade-in" data-aos-duration="1000" data-aos-once="true">
-            <span class="material-symbols-outlined">
-                expand_more
-            </span>
-        </div>
+    </div>
+
+    <!--SECTION-2-->
+    <div class="sec2" >
         <!--INFO-->
-        <div class="info-blocks" data-aos="slide-up" data-aos-duration="2000" >
-            <div class="footcardss">
+        <div class="info-blocks">
+            <div class="footcardss center">
                 <div class="shortcut">SHORTCUTS</div>
                 <div class="cardd1">
                     <img class="cardimg" src="man-work.jpg">
                     <div class="cardhead">
                         <h1>Blogs</h1>
                     </div>
-                    <div class="contentt">
+                    <div class="contentt center">
                         <div class="cardcontent">
                             <p>Check Out Our Blogs!</p>
                         </div>
@@ -185,7 +141,7 @@
                     <div class="cardhead">
                         <h1>Notes</h1>
                     </div>
-                    <div class="contentt">
+                    <div class="contentt center">
                         <div class="cardcontent">
                             <p>Want Some Notes?</p>
                         </div>
@@ -199,7 +155,7 @@
                     <div class="cardhead">
                         <h1>Syllabus</h1>
                     </div>
-                    <div class="contentt">
+                    <div class="contentt center">
                         <div class="cardcontent">
                             <p>Know What To Study</p>
                         </div>
@@ -209,60 +165,62 @@
                     </div>
                 </div>
             </div>
-            </div>
-        <div class="footimg" data-aos="slide-up" data-aos-duration="2000">
-           <img class= 'foott' src="designer.png">
+        </div>
+    </div>
+
+    <!--SECTION-3-->
+    <div class="sec3">
+        <!--FOOTIMG-->
+        <div class="footimg">
+            <img class='foott' src="designer.png">
             <div class="footerr1">
                 <h1>New to nayfers?</h1>
                 <p class="footertext">Join us today and Get started<br>on your journey to excellence!! </p>
                 <p class="footbtn">Sign up</p>
             </div>
         </div>
-    </div>
-    
-    <!--FOOTER-->
-    <div class="foot" data-aos="slide-left" data-aos-duration="2000">
-        <div class="logofoot">
-            <h1>Nayfers.in</h1>
-        </div>
-        <div class="aboutus">
-            <h4>ABOUT US</h4>
-            <hr class="hr1">
-            <p>We at Nayfers aim to provide quality<br>study material for students to help<br> them conquer the
-                impossible<br>through our unmatched resources.</p>
-        </div>
-        <div class="quicklinks">
-            <h4>QUICK LINKS</h4>
-            <hr class="hr2">
-            <p><a href=#>Blog</a></p>
-            <p class="li"><a href=#>Notes</a></p>
-            <p class="li"><a href=#>Syllabus</a></p>
-            <p class="li"><a href=#>Questions</a></p>
-        </div>
-        <div class="contactus">
-            <h4>CONTACT US</h4>
-            <hr class="hr3">
-            <div class="email">
-                <img class='home' src='home.png'>
-                <p>New Delhi</p>
+        <!--FOOTER-->
+        <div class="foot">
+            <div class="logofoot"><h1>Nayfers.in</h1></div>
+            <div class="aboutus">
+                <h4>ABOUT US</h4>
+                <hr class="hr1">
+                <p>We at Nayfers aim to provide quality<br>study material for students to help<br> them conquer the
+                    impossible<br>through our unmatched resources.</p>
             </div>
-            <div class="email">
-                <img class='mail' src="email.png">
-                <p>nayfersinc@gmail.com</p>
+            <div class="quicklinks">
+                <h4>QUICK LINKS</h4>
+                <hr class="hr2">
+                <p><a href=#>Blog</a></p>
+                <p class="li"><a href=#>Notes</a></p>
+                <p class="li"><a href=#>Syllabus</a></p>
             </div>
-            <div class="email">
-                <img class='mail' src="call.png">
-                <p>+91-6397107016</p>
+            <div class="contactus">
+                <h4>CONTACT US</h4>
+                <hr class="hr3">
+                <div class="email">
+                    <img class='home' src='home.png'>
+                    <p>New Delhi</p>
+                </div>
+                <div class="email">
+                    <img class='mail' src="email.png">
+                    <p>nayfersinc@gmail.com</p>
+                </div>
+                <div class="email">
+                    <img class='mail' src="call.png">
+                    <p>+91-6397107016</p>
+                </div>
             </div>
         </div>
     </div>
-    
+
     <!--SCRIPTS-->
     <script src="settings.js"></script>
+    <script src="props.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-    AOS.init();
-</script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

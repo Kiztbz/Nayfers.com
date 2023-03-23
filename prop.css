@@ -1,0 +1,50 @@
+/*WIDTH*/
+.wfull{
+    width: 100%;
+}
+.wzero{
+    width: 0%;
+}
+
+/*HEIGHT*/
+.hfull{
+    height: 100%;
+}
+.hzero{
+    height: 0%;
+}
+
+/*DISPLAY*/
+.vanish{
+    display: none;
+}
+
+/*DISPLAY_PIC*/
+.dp{
+    width: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: blue;
+}
+.dp img{
+    width: 100%;
+}
+
+/*ICON PLACING*/
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/*ALIGN*/
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*CURSOR*/
+.grab{
+    cursor: grab;
+}
