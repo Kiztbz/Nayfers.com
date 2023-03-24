@@ -40,6 +40,9 @@ body {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+html{
+    overflow: hidden;
+}
 
 /*SIDEBARS*/
 .panel {
@@ -151,10 +154,11 @@ body {
 /*SECTION-1*/
 .sec1 {
     height: var(--sec1h);
-    /*
+    position: absolute;
+    top:0px;
+    width: 100%;
     background: url(bg2.jpg);
     background-size: 100%;
-    */
 }
 
 /*HEADER*/
@@ -309,7 +313,9 @@ body {
 
 /*SECTION 2*/
 .sec2 {
-    background-color: #193326b5;
+    position: absolute;
+    top:100%;
+    width: 100%;
     height: var(--sec2h);
     background-image: url(bg.png);
     background-size: cover;
@@ -318,8 +324,6 @@ body {
 /*INFOCARDS*/
 .info-blocks {
     width: 100%;
-    position: absolute;
-    top: 100%;
 }
 
 .footcardss {
@@ -398,6 +402,9 @@ body {
 
 /*SECTION 3*/
 .sec3{
+    position: absolute;
+    top:200%;
+    width: 100%;
     height: var(--sec3h);
     background-image: url(bg2.jpg);
     background-size: 100%;
