@@ -1,3 +1,61 @@
-@media only screen and (max-width: 400px) {
-    
+@media only screen and (max-width: 450px) {
+
+    /*Header*/
+    .links {
+        width: 0%;
+        display: none;
+    }
+    .tools{
+        width: 0%;
+        display: none;
+    }
+    .menu{
+        display: flex;
+        width: 20%;
+        align-items: center;
+        justify-content: center;
+        font-size: large;
+    }
+    .lar{
+        font-size: 40px;
+    }
+    .logo{
+        width: 80%;
+    }
+    /*intro*/
+    .intro-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .intro-left{
+        height: 20%;
+        width: 80%;
+        margin: auto;
+    }
+    .intro-right{
+        height: 50%;
+        width: 90%;
+    }
+    .intro-para-title {
+        font-size: 35px;
+    }
+    .searchbar{
+        margin: auto;
+    }
+    .search{
+        width: 80%;
+    }
+    .search-icon{
+        width: 10%;
+        margin-left: auto;
+    }
+
+    /*Sections*/
+    .sec1 {
+        background: url(geomtricm.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }

@@ -157,6 +157,7 @@ body {
     width: 100%;
     background: url(geomtric.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 /*HEADER*/
@@ -166,6 +167,10 @@ body {
     flex-direction: row;
     height: 80px;
     color: var(--font);
+}
+.menu{
+    width: 0%;
+    display: none;
 }
 
 .logo {
