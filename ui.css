@@ -33,6 +33,7 @@
     margin: 0px;
     padding: 0px;
     transition: 0.7s;
+    overflow-x: hidden;
 }
 
 body {
