@@ -310,11 +310,11 @@ body {
 /*SECTION 2*/
 .sec2 {
     position: absolute;
-    top:100%;
+    top:var(--sec1h);
     width: 100%;
     height: var(--sec2h);
     background-image: url(bg.png);
-    background-size: cover;
+    background-size: 100%;
 }
 
 /*INFOCARDS*/
