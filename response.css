@@ -66,6 +66,11 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+    .sec3 {
+        background: url(bg2m.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     /*infocards*/
     .info-blocks{
         height: 100%;
