@@ -1,3 +1,7 @@
+/*scrollbar*/
+::-webkit-scrollbar {
+    display: none;
+}  
 /*WIDTH*/
 .wfull{
     width: 100%;

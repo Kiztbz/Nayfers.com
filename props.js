@@ -11,6 +11,7 @@ root.style.setProperty('--introh', ih);
 root.style.setProperty('--sec2h', h);
 root.style.setProperty('--sec3h', h);
 
+/*
 window.addEventListener("keydown", function(e) {
     // space and arrow keys
     if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
@@ -50,44 +51,4 @@ function scrolldown()
 {
     window.scrollBy(0,-1);
 }
-
-
-//code drop
-function detectMouseWheelDirection( e )
-{
-    var delta = null,
-        direction = false
-    ;
-    if ( !e ) { // if the event is not provided, we get it from the window object
-        e = window.event;
-    }
-    if ( e.wheelDelta ) { // will work in most cases
-        delta = e.wheelDelta / 60;
-    } else if ( e.detail ) { // fallback for Firefox
-        delta = -e.detail / 2;
-    }
-    if ( delta !== null ) {
-        direction = delta > 0 ? 'up' : 'down';
-    }
-
-    return direction;
-}
-function handleMouseWheelDirection( direction )
-{
-    console.log( direction ); // see the direction in the console
-    if ( direction == 'down' ) {
-        scrollup();
-    } else if ( direction == 'up' ) {
-        // do something, like show the previous page
-    } else {
-        // this means the direction of the mouse wheel could not be determined
-    }
-}
-document.onmousewheel = function( e ) {
-    handleMouseWheelDirection( detectMouseWheelDirection( e ) );
-};
-if ( window.addEventListener ) {
-    document.addEventListener( 'DOMMouseScroll', function( e ) {
-        handleMouseWheelDirection( detectMouseWheelDirection( e ) );
-    });
-}
+*/

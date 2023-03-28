@@ -37,11 +37,7 @@
 
 body {
     background-color: var(--bg);
-    overflow-x: hidden;
     scroll-behavior: smooth;
-}
-html{
-    overflow: hidden;
 }
 
 /*SIDEBARS*/
@@ -157,7 +153,7 @@ html{
     position: absolute;
     top:0px;
     width: 100%;
-    background: url(bg2.jpg);
+    background: url(geomtric.jpg);
     background-size: 100%;
 }
 
