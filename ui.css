@@ -33,12 +33,13 @@
     margin: 0px;
     padding: 0px;
     transition: 0.7s;
-    overflow-x: hidden;
+    
 }
 
 body {
     background-color: var(--bg);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /*SIDEBARS*/
@@ -311,11 +312,12 @@ body {
 /*SECTION 2*/
 .sec2 {
     position: absolute;
-    top:var(--sec1h);
+    top: 100%;
     width: 100%;
     height: var(--sec2h);
     background-image: url(bg.png);
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*INFOCARDS*/
