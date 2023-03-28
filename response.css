@@ -41,6 +41,9 @@
     .intro-para-title {
         font-size: 35px;
     }
+    .intro-desc{
+        font-size: 25px;
+    }
     .searchbar{
         margin: auto;
     }
@@ -57,5 +60,29 @@
         background: url(geomtricm.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+    }
+    .sec2 {
+        background: url(bgm.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    /*infocards*/
+    .info-blocks{
+        height: 100%;
+        margin: auto;
+        display: flex;
+    }
+    .footcardss{
+        flex-direction: column;
+        margin: auto;
+    }
+    .shortcut {
+        display: none;
+    }
+    .cardd1{
+        height: 180px;
+        margin: auto;
+        width: 80%;
+        margin-top: 60px;
     }
 }
