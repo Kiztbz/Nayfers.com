@@ -148,6 +148,31 @@ body {
     flex-direction: row;
 }
 
+/*MOBILE MENU PANEL*/
+.menu-panel{
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg);
+    color : var(--font);
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 1;
+}
+.menu-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    margin: auto;
+}
+.menu-link{
+    margin: auto;
+    font-size: 30px;
+    font-family: 'poppins', sans-serif;
+}
+
 
 /*SECTION-1*/
 .sec1 {

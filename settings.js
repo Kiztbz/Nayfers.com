@@ -4,6 +4,7 @@ function closeNav() {
     closeProfile();
     drop();
     closeDrop();
+    closeMenu();
 }
 function openSettings() {
     document.getElementById("settings").style.right = "0%";
@@ -12,6 +13,10 @@ function openSettings() {
 function openProfile(){
     document.getElementById("profile").style.right = "1%";
     document.getElementById("profile").style.opacity = "100%";
+}
+function openMenu() {
+    document.getElementById("menu").style.left = "0%";
+    document.getElementById("menu").style.opacity = "100%";
 }
 
 function closeSettings() {
@@ -26,6 +31,13 @@ function closeProfile() {
     {
         document.getElementById("profile").style.right = "-40%";
         document.getElementById("profile").style.opacity = "10%";
+    }
+}
+function closeMenu() {
+
+    {
+        document.getElementById("menu").style.left = "-100%";
+        document.getElementById("menu").style.opacity = "10%";
     }
 }
 
@@ -60,20 +72,23 @@ function closeDrop()
 /*THEME*/
 function themeswitch()
 {
-    var tog = document.getElementById("toggle").innerHTML;
+    var tog = document.getElementsByClassName("togglet").innerHTML;
+    var t1 = document.getElementById("t1").innerHTML;
+    var t2 = document.getElementById("t2").innerHTML;
 
-    if (tog.localeCompare("toggle_on") == 0) {
-        document.getElementById('toggle').innerHTML = "toggle_off";
+
+    if (t2 === "toggle_on" || t1 === "toggle_on") {
+        document.getElementById("t1").innerHTML = "toggle_off";
+        document.getElementById("t2").innerHTML = "toggle_off";
         document.querySelector(':root').style.setProperty('--font', 'black');
         document.querySelector(':root').style.setProperty('--bg', 'white');
-        document.getElementById('logo').src ="logo_highres.png";
 
     }
     else {
-        document.getElementById('toggle').innerHTML = "toggle_on";
+        document.getElementById("t1").innerHTML = "toggle_on";
+        document.getElementById("t2").innerHTML = "toggle_on";
         document.querySelector(':root').style.setProperty('--font', 'white');
         document.querySelector(':root').style.setProperty('--bg', 'black');
-        document.getElementById('logo').src ="logo_highresw.png";
     }
 
 
