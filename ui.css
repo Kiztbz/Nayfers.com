@@ -414,18 +414,29 @@ body {
     background-size: 100%;
     background-size: cover;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .foot {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 100px;
+    height: 25%;
+    background-color: #edf5e167;
 }
 /*FOOTIMAGE*/
 .footimg {
     justify-content: center;
     display: flex; 
-    height: auto;
+    height: 75%;
+    width: 100%;
+}
+.img_foot{
+    width: 30%;
+    display: flex;
+    margin: auto;
+}
+.img_foot img{
     width: 100%;
 }
 .footerr1 {
@@ -433,12 +444,8 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 23%;
-}
-.foott
-{
-    block-size: 400px;
-    margin-top: 20px;
+    width: 30%;
+    margin: auto;
 }
 .footerr1 p {
     margin-bottom: 10px;
@@ -478,16 +485,17 @@ transform: translateY(-8px);
     margin-left: auto;
     margin-top: 10px;
     margin-bottom: auto;
+    width: 30%;
 }
 
 .logofoot {
     font-family: 'Phudu', cursive;
     font-size: 20px;
-    margin-left: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #379683;
+    width: 30%;
 }
 
 .hr1 {
@@ -521,6 +529,7 @@ transform: translateY(-8px);
     margin-left: 90px;
     margin-top: 10px;
     margin-bottom: auto;
+    width: 20%;
 }
 
 .contactus {
@@ -529,6 +538,7 @@ transform: translateY(-8px);
     margin-top: 10px;
     margin-bottom: auto;
     margin-right: 50px;
+    width: 20%;
 }
 
 .mail {
@@ -553,16 +563,6 @@ transform: translateY(-8px);
 
 h4 {
     color: #088178;
-}
-
-.foot {
-   
-    display: flex;
-    margin-left: 50px;
-    align-items: center;
-    margin-top: 5%;
-   
-  
 }
 
 .li {

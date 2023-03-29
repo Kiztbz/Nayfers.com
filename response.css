@@ -70,6 +70,8 @@
         background: url(bg2m.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
     }
     /*infocards*/
     .info-blocks{
@@ -85,9 +87,47 @@
         display: none;
     }
     .cardd1{
-        height: 180px;
+        height: 150px;
         margin: auto;
-        width: 80%;
+        width: 60%;
         margin-top: 60px;
+    }
+    .cardimg {
+        block-size: 100px;
+        border-radius: 10px;
+        transform: translateY(-50px);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    }
+    /*Footerimg*/
+    .footimg{
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+    }
+    .img_foot{
+        width: 80%;
+        height: 50%;
+        margin: auto;
+    }
+    .img_foot img{
+        width: 100%;
+    }
+    .footerr1{
+        height: 50%;
+        width: 80%;
+        margin: auto;
+        align-items: center;
+    }
+    .footerr1 h1{
+        font-size: 35px;
+    }
+    .foot{
+        height: 20%;
+    }
+    .logofoot{
+        width: 100%;
+    }
+    .aboutus, .quicklinks, .contactus{
+        display: none;
     }
 }
