@@ -57,7 +57,7 @@
 
     /*Sections*/
     .sec1 {
-        background: url(geomtricm.jpg);
+
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -68,7 +68,6 @@
         overflow: hidden;
     }
     .sec3 {
-        background: url(bg2m.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;

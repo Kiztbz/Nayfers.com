@@ -9,11 +9,11 @@
 /*VARIABLES*/
 :root {
     /*COLOUR_THEMES*/
-    --font: #05386B;
+    --font: #F4EBD0;
     --theme: #379683;
     --dtheme: #050706;
-    --panel: #EDF5E1;
-    --bg: #ffffff;
+    --panel: #D6AD60;
+    --bg: #122620;
     --foot: #193326;
 
     /*IMAGE_LINKS*/
@@ -33,7 +33,7 @@
     margin: 0px;
     padding: 0px;
     transition: 0.7s;
-    
+    color: var(--font);
 }
 
 body {
@@ -41,7 +41,10 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
-
+a{
+    color: var(--font);
+    text-decoration: none;
+}
 /*SIDEBARS*/
 .panel {
     position: fixed;
@@ -180,7 +183,6 @@ body {
     position: absolute;
     top:0px;
     width: 100%;
-    background: url(geomtric.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -319,6 +321,8 @@ body {
     border: none;
     padding: 20px;
     font-size: 20px;
+    background-color: var(--dtheme);
+    color: var(--font);
 }
 
 .searchbar input:focus {
@@ -345,7 +349,6 @@ body {
     top: 100%;
     width: 100%;
     height: var(--sec2h);
-    background-image: url(bg.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -373,7 +376,7 @@ body {
     font-family: 'poppins', sans-serif;
     width: 25%;
     height: 230px;
-    background-color: #f4f4f4;
+    background-color: var(--dtheme);
     box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.46);
     -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.46);
     -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.46);
@@ -435,7 +438,6 @@ body {
     top:200%;
     width: 100%;
     height: var(--sec3h);
-    background-image: url(bg2.jpg);
     background-size: 100%;
     background-size: cover;
     overflow: hidden;
@@ -443,11 +445,12 @@ body {
     flex-direction: column;
 }
 .foot {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 25%;
-    background-color: #edf5e167;
 }
 /*FOOTIMAGE*/
 .footimg {
@@ -593,11 +596,6 @@ h4 {
 .li {
     margin-top: 10px;
 
-}
-
-a {
-    text-decoration: none;
-    color: black;
 }
 
 /*
