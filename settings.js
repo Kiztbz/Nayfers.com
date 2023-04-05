@@ -80,8 +80,8 @@ function themeswitch()
     if (t2 === "toggle_on" || t1 === "toggle_on") {
         document.getElementById("t1").innerHTML = "toggle_off";
         document.getElementById("t2").innerHTML = "toggle_off";
-        document.querySelector(':root').style.setProperty('--font', 'black');
-        document.querySelector(':root').style.setProperty('--bg', 'white');
+        document.querySelector(':root').style.setProperty('--font', '#F4EBD0');
+        document.querySelector(':root').style.setProperty('--bg', '#122620');
 
     }
     else {

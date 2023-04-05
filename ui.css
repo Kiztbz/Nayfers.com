@@ -12,7 +12,7 @@
     --font: #F4EBD0;
     --theme: #379683;
     --dtheme: #050706;
-    --panel: #D6AD60;
+    --panel: #193326;
     --bg: #122620;
     --foot: #193326;
 
@@ -117,10 +117,11 @@ a{
 .pp-header-content {
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 
 .account-dp {
-    width: 40%;
+    width: 100%;
     margin: auto;
 }
 

@@ -15,6 +15,10 @@
         align-items: center;
         justify-content: center;
         font-size: large;
+        color: #f4f4f4;
+    }
+    .menu-icon{
+        font-size: 35px !important;
     }
     .lar{
         font-size: 40px;
@@ -56,23 +60,6 @@
     }
 
     /*Sections*/
-    .sec1 {
-
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .sec2 {
-        background: url(bgm.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        overflow: hidden;
-    }
-    .sec3 {
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-    }
     /*infocards*/
     .info-blocks{
         height: 100%;
@@ -87,15 +74,19 @@
         display: none;
     }
     .cardd1{
-        height: 140px;
+        height: 120px;
         margin: auto;
         width: 60%;
-        margin-top: 30px;
+        margin-top: 40px;
+    }
+    .cardd1:hover {
+        height: 250px;
+        transform: translateY(-20px);
     }
     .cardimg {
-        block-size: 90px;
+        block-size: 60px;
         border-radius: 10px;
-        transform: translateY(-50px);
+        transform: translateY(-10px);
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
     }
     /*Footerimg*/
