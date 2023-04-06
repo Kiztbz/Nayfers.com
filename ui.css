@@ -200,6 +200,9 @@ a{
     width: 0%;
     display: none;
 }
+.menu-tab{
+    display: none;
+}
 
 .logo {
     width: 20%;
@@ -282,6 +285,9 @@ a{
 
 .introimg {
     width: 90%;
+}
+.introimg img{
+    width: 100%;
 }
 
 /*INTRO_ANIMATION*/
@@ -596,17 +602,4 @@ h4 {
 
 .li {
     margin-top: 10px;
-
 }
-
-/*
-
-.footerr1 {
-    font-family: 'poppins', sans-serif;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 23%;
-}
-
-*/

@@ -10,7 +10,7 @@ function openSettings() {
     document.getElementById("settings").style.right = "0%";
     document.getElementById("settings").style.opacity = "100%";
 }
-function openProfile(){
+function openProfile() {
     document.getElementById("profile").style.right = "1%";
     document.getElementById("profile").style.opacity = "100%";
 }
@@ -20,15 +20,13 @@ function openMenu() {
 }
 
 function closeSettings() {
-    if(document.getElementById("settings").style.right=="0%")
-    {
+    if (document.getElementById("settings").style.right == "0%") {
         document.getElementById("settings").style.opacity = "10%";
         document.getElementById("settings").style.right = "-40%";
     }
 }
 function closeProfile() {
-    if(document.getElementById("profile").style.right=="1%")
-    {
+    if (document.getElementById("profile").style.right == "1%") {
         document.getElementById("profile").style.right = "-40%";
         document.getElementById("profile").style.opacity = "10%";
     }
@@ -41,7 +39,6 @@ function closeMenu() {
     }
 }
 
-
 document.addEventListener('keydown', function (event) {
     const ENTERKEY = 27;
     if (event.keyCode === ENTERKEY) {
@@ -50,28 +47,25 @@ document.addEventListener('keydown', function (event) {
 });
 
 /*DROPDOWN*/
-function drop(){
-    if(document.getElementById("dropdown").style.height != "auto")
-    {
+function drop() {
+    if (document.getElementById("dropdown").style.height != "auto") {
         document.getElementById("dropdown").style.height = "auto";
         document.getElementById("dropdown").style.display = "flex";
     }
-    else{
+    else {
         document.getElementById("dropdown").style.height = "0";
         document.getElementById("dropdown").style.display = "none";
 
-    }    
+    }
 }
-function closeDrop()
-{
+function closeDrop() {
     document.getElementById("dropdown").style.height = "0";
     document.getElementById("dropdown").style.display = "none";
 }
 
 
 /*THEME*/
-function themeswitch()
-{
+function themeswitch() {
     var tog = document.getElementsByClassName("togglet").innerHTML;
     var t1 = document.getElementById("t1").innerHTML;
     var t2 = document.getElementById("t2").innerHTML;
@@ -92,4 +86,4 @@ function themeswitch()
     }
 
 
-} 
+}
